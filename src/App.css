@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.movie-card {
+    border: 1px solid #007bff; /* Bootstrap primary color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    overflow: hidden; /* Crop overflow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.movie-card img {
+    max-height: 200px;
+    object-fit: cover; /* Crop image if necessary */
+}
